@@ -16,6 +16,7 @@
 		BC49A9CC26995C9300321E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC49A9CB26995C9300321E7C /* main.m */; };
 		BC49A9D626995C9400321E7C /* YesGestureRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC49A9D526995C9400321E7C /* YesGestureRecognizerTests.m */; };
 		BC49A9E126995C9400321E7C /* YesGestureRecognizerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC49A9E026995C9400321E7C /* YesGestureRecognizerUITests.m */; };
+		BC49A9F126995D0700321E7C /* YesTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC49A9F026995D0700321E7C /* YesTapGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BC49A9DC26995C9400321E7C /* YesGestureRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesGestureRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC49A9E026995C9400321E7C /* YesGestureRecognizerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesGestureRecognizerUITests.m; sourceTree = "<group>"; };
 		BC49A9E226995C9400321E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC49A9EF26995CEF00321E7C /* YesTapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YesTapGestureRecognizer.h; sourceTree = "<group>"; };
+		BC49A9F026995D0700321E7C /* YesTapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesTapGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		BC49A9B826995C8F00321E7C /* YesGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				BC49A9EE26995CCC00321E7C /* YesGestureRecognizer */,
 				BC49A9B926995C8F00321E7C /* AppDelegate.h */,
 				BC49A9BA26995C8F00321E7C /* AppDelegate.m */,
 				BC49A9BC26995C8F00321E7C /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				BC49A9E226995C9400321E7C /* Info.plist */,
 			);
 			path = YesGestureRecognizerUITests;
+			sourceTree = "<group>";
+		};
+		BC49A9EE26995CCC00321E7C /* YesGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				BC49A9EF26995CEF00321E7C /* YesTapGestureRecognizer.h */,
+				BC49A9F026995D0700321E7C /* YesTapGestureRecognizer.m */,
+			);
+			path = YesGestureRecognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 				BC49A9BB26995C8F00321E7C /* AppDelegate.m in Sources */,
 				BC49A9CC26995C9300321E7C /* main.m in Sources */,
 				BC49A9BE26995C8F00321E7C /* SceneDelegate.m in Sources */,
+				BC49A9F126995D0700321E7C /* YesTapGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
