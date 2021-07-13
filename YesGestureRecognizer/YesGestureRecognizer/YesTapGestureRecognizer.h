@@ -7,12 +7,9 @@
 
 #ifndef YesTapGestureRecognizer_h
 #define YesTapGestureRecognizer_h
-#import <UIKit/UIGestureRecognizer.h>
+#import <UIKit/UITapGestureRecognizer.h>
 
-@interface YesTapGestureRecognizer : UIGestureRecognizer
-
-@property (nonatomic, assign) NSUInteger numberOfTapsRequired;
-@property (nonatomic, assign) NSUInteger numberOfTouchesRequired;
+@interface YesTapGestureRecognizer : UITapGestureRecognizer
 @property (nonatomic, assign) NSTimeInterval intervalBetweenTaps;
 
 @end

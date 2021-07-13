@@ -17,21 +17,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor blueColor]];
-    YesTapGestureRecognizer* tap=[[YesTapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+    [self.view setBackgroundColor:[self randColor]];
+    YesTapGestureRecognizer* tap=[[YesTapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
     tap.numberOfTapsRequired = 2;
     tap.numberOfTouchesRequired = 1;
-    tap.intervalBetweenTaps = 0.2;
+    tap.intervalBetweenTaps = 0.3;
     [self.view addGestureRecognizer:tap];
 }
 
--(void)tap:(UITapGestureRecognizer*)sender
+-(void)tapAction:(YesTapGestureRecognizer*)sender
 {
     [self.view setBackgroundColor:[self randColor]];
-    
 }
 
-- (UIColor *) randColor
+- (UIColor *)randColor
 {
     float red = (50+(arc4random()%200)) / 250.0;
     float green = ((arc4random()%250)) / 250.0;
